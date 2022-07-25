@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@jsplumb-components/flowchart/jsplumb.components.flowchart.css";
+
+app-root {
+  display:flex;
+}
+
+jsplumb-flowchart-builder {
+  height: 100vh;
+  display: block;
+  margin-right: 20px;
+  flex:1 0 70%;
+}
+
+jsplumb-flowchart-builder-palette {
+  display:block;
+  flex:0 0 200px;
+}
+
+jsplumb-flowchart-builder > div {
+  width: 100%;
+  outline: 1px solid;
+  height: 100%;
+}
+
+jsplumb-flowchart-builder > div jsplumb-surface {
+  width: 100%;
+  outline: 10px solid green;
+  height: 100%;
+  display:block;
+}
+
+jsplumb-flowchart-builder > div jsplumb-surface > div {
+  height:100%;
+}
+
+jsplumb-flowchart-builder-inspector {
+  display:block;
+}
