@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, Input, ViewChild} from '@angular/core'
+import {AfterViewInit, Component, ViewChild} from '@angular/core'
 import { FlowchartComponent } from "@jsplumb-components/flowchart-angular"
 
 @Component({
@@ -14,9 +14,9 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    this.flowchart.loadUrl("assets/copyright.json")
+    this.flowchart.loadUrl("assets/copyright.json", () => {
+      this.flowchart.zoomToFit()
+    })
   }
-
-
 
 }
